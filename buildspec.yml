@@ -5,10 +5,10 @@ phases:
     runtime-versions:
       nodejs: 12
     commands:
-      - yarn install --frozen-lockfile
+      - npm install
   build:
     commands:
-      - yarn build
+      - npm run build
 
 artifacts:
   files:
@@ -16,4 +16,4 @@ artifacts:
 
 cache:
   paths:
-    - .yarn/cache
+    - node_modules/
