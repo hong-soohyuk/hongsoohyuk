@@ -5,6 +5,8 @@ phases:
     runtime-versions:
       nodejs: 12
     commands:
+      - npm cache clean --force
+      - rm -rf node_modules package-lock.json
       - npm install
   build:
     commands:
